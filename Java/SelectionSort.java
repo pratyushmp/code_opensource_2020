@@ -21,6 +21,6 @@ public class SelectionSort {
         int t = a[i];
         a[i] = a[m];
         a[m] = t;
-        System.out.println(Arrays.toString(A));
+        System.out.println(Arrays.toString(a));
     }
 }
