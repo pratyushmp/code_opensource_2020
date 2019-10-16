@@ -5,7 +5,7 @@ public class Permutation {
     }
 
     private static void getAllPermutation(String original, String result) {
-        if (original == null || original.isEmpty())
+        if (original == null )
             return;
         int length = original.length();
         if (length == 0)
