@@ -4,7 +4,7 @@ public class Insertion{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int[] data = new int[1]; //Initializing array
-        int eleccion=0,size=0,error=0,dato=0,aux=0; //Initializing variables
+        int size=0,error=0; //Initializing variables
         do{
             error=0;
                     System.out.println("How many numbers do you wish to sort?");
@@ -20,6 +20,7 @@ public class Insertion{
                     error=1;
                 }
         }while(error!=0);
+        sc.close();
         insertion(data,size);
     }
 
