@@ -6,14 +6,14 @@ def main():
     print()
 
     odd_numbers = [x for x in numbers_up_to_100 if x % 2 == 1]
-    print("All of the even numbers up to 100:")
-    print(even_numbers)
+    print("All of the odd numbers up to 100:")
+    print(odd_numbers)
 
     print()
 
-    even_numbers = [x for x in numbers_up_to_100 if x not in even_numbers]
-    print("All of the odd numbers up to 100:")
-    print(odd_numbers)
+    even_numbers = [x for x in numbers_up_to_100 if x not in odd_numbers]
+    print("All of the even numbers up to 100:")
+    print(even_numbers)
 
     even_squares = [x ** 2 for x in even_numbers]
     print("All of the even numbers up to 100 squared:")
