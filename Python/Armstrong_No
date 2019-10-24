@@ -33,9 +33,7 @@ def isArmstrong (x):
 	# If condition satisfies 
 	return (sum1 == x) 
 
-
-# Driver Program 
-x = 153
-print(isArmstrong(x)) 
-x = 1253
+#driver program
+#input a number from user
+x=int(input())
 print(isArmstrong(x)) 
