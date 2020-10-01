@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Short Profile</title>
+        <link rel="stylesheet" href="short_profile.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="profile">
+          <div class="photo">
+            <img src="test_gl.jpg" />
+          </div>
+          <div class="content">
+            <div class="text">
+              <h3>Jane Doe</h3>
+              <h6>Front-End Web Developer</h6>
+            </div>
+            <div class="btn">
+              <span></span>
+            </div>
+          </div>
+          <div class="box">
+              
+<!--
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-facebook"></i></span>
+            <span><i class="fab fa-reddit"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-tumblr"></i></span>
+-->
+            <span title="instagram"><i class="fa fa-instagram"></i></span>
+            <span><i class="fa fa-facebook"></i></span>
+            <span><i class="fa fa-reddit"></i></span>
+            <span><i class="fa fa-twitter"></i></span>
+            <span><i class="fa fa-tumblr"></i></span>
+
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            (function() {
+              $(".btn").click(function() {
+                $(this).toggleClass("active");
+                return $(".box").toggleClass("open");
+              });
+            }.call(this));
+        </script>
+    </body>
+</html>
