@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 
 class Graph
-{ 
+{
 	private int _V;
- 
+
 	LinkedList<int>[] _adj;
 
 	public Graph(int V)
@@ -31,7 +31,7 @@ class Graph
 		bool[] visited = new bool[_V];
 		for (int i = 0; i < _V; i++)
 			visited[i] = false;
- 
+
 		LinkedList<int> queue = new LinkedList<int>();
 
 		visited[s] = true;
@@ -43,7 +43,7 @@ class Graph
 			s = queue.First();
 			Console.Write(s + " ");
 			queue.RemoveFirst();
- 
+
 			LinkedList<int> list = _adj[s];
 
 			foreach (var val in list)
@@ -56,15 +56,17 @@ class Graph
 			}
 		}
 	}
-static void Main(string[] args)
+
+	static void Main(string[] args)
 	{
 		Graph g = new Graph(4);
 
 		g.AddEdge(0, 1);
+		g.AddEdge(0, 2);
 		g.AddEdge(1, 2);
+		g.AddEdge(2, 0);
 		g.AddEdge(2, 3);
-		g.AddEdge(3, 4);
-		g.AddEdge(4, 3);
+		g.AddEdge(3, 3);
 
 		Console.Write(" Breadth First " +
 					"Traversal(starting from " +
