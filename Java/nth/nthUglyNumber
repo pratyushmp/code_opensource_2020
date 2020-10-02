@@ -1,0 +1,49 @@
+import java.io.*;
+import java.util.*;
+class Ugly
+{
+public boolean isUgly(int num) 
+{ 
+  num = maxDivide(num, 2); 
+  num = maxDivide(num, 3); 
+  num = maxDivide(num, 5); 
+    
+  if(num==1)
+  return true;
+  else return false;
+}     
+
+public int maxDivide(int a, int b) 
+{ 
+  while (a%b == 0) 
+   a = a/b;  
+  return a; 
+}     
+
+
+public int getNthUglyNo(int n) 
+{ 
+  int i = 1;  
+  int count = 1;  
+  
+
+  while (n > count) 
+  { 
+    i++;       
+    if (isUgly(i)) 
+      count++;  
+  } 
+  return i; 
+} 
+
+public static void main(String args[])throws IOException 
+{ 
+    Scanner sc=new Scanner(System.in);
+    int n;
+    n=sc.nextInt();
+    Ugly ob=new Ugly();
+    int no = ob.getNthUglyNo(n); 
+    System.out.println(n+"th ugly no. is "+no); 
+
+} 
+}
