@@ -21,6 +21,7 @@ git clone <link-of-repos>
 3. Make changes to the cloned repos
 
 4. Run the following three commands 
+ok
 
 ```
 git add .
